@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Black Box — Incubate Nepal</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link rel="stylesheet" href="style.css" />
+</head><body>
+<nav><div class="container nav-inner"><div class="nav-left"><div class="mark">B</div><div class="nav-name">Black Box <span>/ Incubate Nepal '26</span></div></div>
+<div class="nav-links"><a href="index.html">Lab</a><a href="research.html">Research</a><a href="people.html">People</a><a href="projects.html" class="active">Projects</a><a href="reading.html">Reading</a></div></div></nav>
+
+<div class="article"><a href="projects.html" class="back-link">← Back to Threads</a>
+<div class="article-head"><div class="eyebrow">Nimansh Dahal / July 2026</div><h1 class="serif">When Interpretability Fails</h1>
+<div class="article-tags">Medical Imaging · Interpretability · Trustworthy AI</div></div>
+<div class="prose">
+<div class="callout"><div class="eyebrow">TL;DR</div><p>Cataloguing failure modes where Grad-CAM looks plausible but prediction is wrong.</p></div>
+<h3>The Problem</h3><p>Good looking heatmap does not equal correct prediction. We need failure taxonomy.</p>
+<h3>Our Approach</h3><p>We collect 30 failure cases: model predicts correctly but looks at wrong region, predicts wrongly but heatmap looks right, and heatmap is diffuse. Create 3 categories and analyze.</p>
+<div class="figure"><div class="fig-box">Original Image<br><span style="font-size:10px">e.g., chest X-ray</span></div><div class="fig-box heatmap">Grad-CAM Heatmap<br><span style="font-size:10px">model focus</span></div></div>
+<div class="code"># gradcam.py — pseudocode
+import torch
+from pytorch_grad_cam import GradCAM
+cam = GradCAM(model=model, target_layers=[model.layer4])
+grayscale_cam = cam(input_tensor=image)
+show_cam_on_image(image, grayscale_cam)</div>
+<h3>What We Found</h3><p>Most interesting failure: model predicts pneumonia correctly by looking at chest tube (treatment marker), not disease. Heatmap is sharp and convincing, but reasoning is wrong — 'right for wrong reasons'. This is dangerous for deployment.</p>
+<h3>Why It Matters / Open Questions</h3><p>If models rely on shortcuts, high accuracy is misleading. Next: test with external hospital data, compare Grad-CAM vs Score-CAM, and build a simple audit checklist clinicians can use before deployment.</p>
+<h3>References</h3><p class="refs">Selvaraju et al. Grad-CAM, Geirhos et al. Shortcut Learning, Adebayo et al. Sanity Checks.</p>
+</div></div>
+
+<footer><div class="container"><div class="footer-grid">
+<div><strong>© 2026 Black Box — Incubate Nepal.</strong><br>Mentor: Aadim Nepal · Peer Mentor: Ashok Timsina<br>Focus: Interpretable AI / Trustworthy Deployment / Medical Imaging</div>
+<div>blackbox.incubate@gmail.com<br>Kathmandu, NP (virtual)</div>
+</div></div></footer>
+</body></html>

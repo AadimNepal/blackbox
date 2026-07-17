@@ -84,7 +84,7 @@ nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.85);backdrop-f
 
 /* Profile grid (team page) */
 .mentor-row{display:flex;justify-content:center;flex-wrap:wrap;gap:24px;margin-bottom:24px}
-.mentor-row .profile-lead{flex:1 1 420px;max-width:480px}
+.mentor-row .profile-card{flex:1 1 300px;max-width:360px}
 .profile-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .profile-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.18s}
 a.profile-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}

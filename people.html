@@ -6,15 +6,79 @@
 
 <div class="container section">
 <div class="section-head"><div class="eyebrow">People</div><h2 class="serif">Mentors &amp; Researchers</h2><p>8 members. Interests span medical AI, interpretability, and trustworthy deployment.</p></div>
-<div class="people-grid">
-<div class="person lead"><div class="person-top"><div class="avatar"><img src="assets/aadim-nepal.jpg" alt="Aadim Nepal"/></div><div><h4>Aadim Nepal</h4><span class="role-pill">Mentor</span></div></div><p>Leads Team Black Box's research agenda across interpretability and trustworthy AI deployment. Incubate Nepal 2026.</p><p style="margin-top:10px;font-size:12.5px">aadim@incubate</p></div>
-<div class="person lead"><div class="person-top"><div class="avatar"><img src="assets/ashok-timsina.jpg" alt="Ashok Timsina"/></div><div><h4>Ashok Timsina</h4><span class="role-pill">Peer Mentor</span></div></div><p>Co-leads experiment design, Grad-CAM pipelines, and keeps our results reproducible.</p><p style="margin-top:10px;font-size:12.5px">ashok@incubate</p></div>
-<a class="person" href="thread-01-yash-shah.html"><div class="person-top"><div class="avatar"><img src="assets/yash-shah.jpg" alt="Yash Shah"/></div><div><h4>Yash Shah</h4><span class="role-pill">Medical AI, Bias</span></div></div><p>Testing whether chest X-ray models quietly learn hospital markers instead of real pathology.</p><span class="person-link">View thread →</span></a>
-<a class="person" href="thread-02-pragyan-devkota.html"><div class="person-top"><div class="avatar"><img src="assets/pragyan-devkota.jpg" alt="Pragyan Devkota"/></div><div><h4>Pragyan Devkota</h4><span class="role-pill">Explainability</span></div></div><p>Running sanity checks on Grad-CAM to find out when saliency maps can — and can't — be trusted.</p><span class="person-link">View thread →</span></a>
-<a class="person" href="thread-03-garima-bartaula.html"><div class="person-top"><div class="avatar"><img src="assets/garima-bartaula.jpg" alt="Garima Bartaula"/></div><div><h4>Garima Bartaula</h4><span class="role-pill">Human-AI Alignment</span></div></div><p>Comparing where models look against where doctors look, case by case.</p><span class="person-link">View thread →</span></a>
-<a class="person" href="thread-04-kripesh-sharma.html"><div class="person-top"><div class="avatar"><img src="assets/kripesh-sharma.jpg" alt="Kripesh Sharma"/></div><div><h4>Kripesh Sharma</h4><span class="role-pill">Fundamentals</span></div></div><p>Building a CNN from scratch to see what each layer actually learns to detect.</p><span class="person-link">View thread →</span></a>
-<a class="person lead" href="thread-05-nimansh-dahal.html"><div class="person-top"><div class="avatar"><img src="assets/nimansh-dahal.jpg" alt="Nimansh Dahal"/></div><div><h4>Nimansh Dahal</h4><span class="role-pill">Failure Modes</span></div></div><p>Hunting for the cases where Grad-CAM looks confident but is completely wrong.</p><span class="person-link">View thread →</span></a>
-<a class="person lead" href="thread-06-arshiya-shah.html"><div class="person-top"><div class="avatar"><img src="assets/arshiya-shah.jpg" alt="Arshiya Shah"/></div><div><h4>Arshiya Shah</h4><span class="role-pill">Deployment, Ethics</span></div></div><p>Turning our findings into a practical checklist for deploying medical AI responsibly.</p><span class="person-link">View thread →</span></a>
+
+<div class="profile-grid">
+
+<div class="profile-card profile-lead">
+<img class="profile-photo" src="assets/aadim-nepal.jpg" alt="Aadim Nepal"/>
+<div class="profile-body">
+<span class="role-pill">Mentor</span>
+<h4>Aadim Nepal</h4>
+<p>Aadim founded and leads Team Black Box. He's spent the last few years thinking about what happens when we hand important decisions to models nobody fully understands — and decided the fix starts with a team that actually opens the box instead of trusting the label on it. He mentors across every thread, from dataset design to the final audit checklist.</p>
+</div></div>
+
+<div class="profile-card profile-lead">
+<img class="profile-photo" src="assets/ashok-timsina.jpg" alt="Ashok Timsina"/>
+<div class="profile-body">
+<span class="role-pill">Peer Mentor</span>
+<h4>Ashok Timsina</h4>
+<p>Ashok keeps the lab honest. As peer mentor, he co-designs experiments with each researcher and makes sure every result survives a second look before anyone gets excited about it — new random seed, new test set, no exceptions. He's especially focused on making the team's Grad-CAM pipeline something other labs could actually reuse.</p>
+</div></div>
+
+<a class="profile-card" href="thread-01-yash-shah.html">
+<img class="profile-photo" src="assets/yash-shah.jpg" alt="Yash Shah"/>
+<div class="profile-body">
+<span class="role-pill">Medical AI, Bias</span>
+<h4>Yash Shah</h4>
+<p>Yash spends his time trying to trick chest X-ray models into revealing their shortcuts. His project injects tiny synthetic markers into training images to see how quickly a model abandons real medical reasoning for an easier pattern — so far, the answer has been uncomfortably fast.</p>
+<span class="person-link">View thread →</span>
+</div></a>
+
+<a class="profile-card" href="thread-02-pragyan-devkota.html">
+<img class="profile-photo" src="assets/pragyan-devkota.jpg" alt="Pragyan Devkota"/>
+<div class="profile-body">
+<span class="role-pill">Explainability</span>
+<h4>Pragyan Devkota</h4>
+<p>Pragyan is the team's resident skeptic. Before anyone celebrates a nice-looking Grad-CAM heatmap, he wants to see it survive a sanity check — does it still look meaningful on a randomly initialized model? Often it doesn't, and that's exactly the kind of result he's after.</p>
+<span class="person-link">View thread →</span>
+</div></a>
+
+<a class="profile-card" href="thread-03-garima-bartaula.html">
+<img class="profile-photo" src="assets/garima-bartaula.jpg" alt="Garima Bartaula"/>
+<div class="profile-body">
+<span class="role-pill">Human-AI Alignment</span>
+<h4>Garima Bartaula</h4>
+<p>Garima cares about the human side of interpretability: does a model's attention actually line up with what a radiologist would look at? She's been comparing Grad-CAM maps against real clinician annotations, image by image, and the gap she's found is bigger than most people expect.</p>
+<span class="person-link">View thread →</span>
+</div></a>
+
+<a class="profile-card" href="thread-04-kripesh-sharma.html">
+<img class="profile-photo" src="assets/kripesh-sharma.jpg" alt="Kripesh Sharma"/>
+<div class="profile-body">
+<span class="role-pill">Fundamentals</span>
+<h4>Kripesh Sharma</h4>
+<p>Kripesh built a CNN completely from scratch — no pretrained weights, no shortcuts — because he wanted to understand exactly what happens between an image going in and a diagnosis coming out. He can now walk you through, layer by layer, the moment a network stops seeing edges and starts seeing lungs.</p>
+<span class="person-link">View thread →</span>
+</div></a>
+
+<a class="profile-card" href="thread-05-nimansh-dahal.html">
+<img class="profile-photo" src="assets/nimansh-dahal.jpg" alt="Nimansh Dahal"/>
+<div class="profile-body">
+<span class="role-pill">Failure Modes</span>
+<h4>Nimansh Dahal</h4>
+<p>Nimansh collects the team's most convincing failures: cases where a model is confidently wrong and Grad-CAM makes the mistake look completely reasonable. His running theory is that the most dangerous failures aren't the obvious ones — they're the ones that look fine until you check twice.</p>
+<span class="person-link">View thread →</span>
+</div></a>
+
+<a class="profile-card" href="thread-06-arshiya-shah.html">
+<img class="profile-photo" src="assets/arshiya-shah.jpg" alt="Arshiya Shah"/>
+<div class="profile-body">
+<span class="role-pill">Deployment, Ethics</span>
+<h4>Arshiya Shah</h4>
+<p>Arshiya turns everyone else's findings into something a hospital could actually use — a practical checklist for auditing a medical model before it ever sees a real patient. Her favorite question, asked in nearly every team meeting, is simply: would you trust this in a clinic?</p>
+<span class="person-link">View thread →</span>
+</div></a>
+
 </div></div>
 
 <footer><div class="container"><div class="footer-grid">
